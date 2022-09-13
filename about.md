@@ -1,15 +1,13 @@
 ---
 layout: page
-title: About
+title: 关于
 permalink: /about/
 ---
 
-Some information about you!
+### 杭州简算技术服务有限公司
 
-### More Information
+创始人曾在互联网大厂、银行、科研院所等单位主导研发和实施过不同规模和特色的人工智能算力平台。
 
-A place to include any other types of information that you'd like to include about yourself.
+### 联系我们
 
-### Contact me
-
-[email@domain.com](mailto:email@domain.com)
+[mojianhao@jiansuan.tech](mailto:mojinahao@jiansuan.tech)
