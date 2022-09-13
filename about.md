@@ -11,3 +11,11 @@ permalink: /about/
 ### 联系我们
 
 [mojianhao@jiansuan.tech](mailto:mojinahao@jiansuan.tech)
+
+微信号：mo_jianhao
+
+<img src="{{ site.baseurl }}/images/Wechat.jpeg" style="width: 200px;"/>
+
+钉钉号：mojianhao
+
+<img src="{{ site.baseurl }}/images/dingding.png" style="width: 200px;"/>
