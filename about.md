@@ -1,21 +1,27 @@
 ---
 layout: page
-title: 关于
+title: About
 permalink: /about/
 ---
 
-### 杭州简算技术服务有限公司
+### 杭州简算技术服务有限公司 | Hangzhou Jiansuan Technology Service Co. LTD
 
-创始人曾在互联网大厂、银行、科研院所等单位主导研发和实施过不同规模和特色的人工智能算力平台。
+The founder once led the R&D team to build and operate **AI computing platforms** with different scales and features in **internet giant**, **bank**, **scientific research institutes**.
 
-### 联系我们
+### Founder
 
-[mojianhao@jiansuan.tech](mailto:mojinahao@jiansuan.tech)
+莫简豪｜Mo Jianhao 
 
-微信号：mo_jianhao
+[Linkedin](https://www.linkedin.com/in/mojianhao/)
+
+### Contact us
+
+Email: [mojianhao@jiansuan.tech](mailto:mojinahao@jiansuan.tech)
+
+Wechat: mo_jianhao
 
 <img src="{{ site.baseurl }}/images/Wechat.jpeg" style="width: 200px;"/>
 
-钉钉号：mojianhao
+Dingtalk: mojianhao
 
 <img src="{{ site.baseurl }}/images/dingding.png" style="width: 200px;"/>
