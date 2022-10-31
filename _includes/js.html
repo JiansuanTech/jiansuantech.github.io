@@ -1,0 +1,15 @@
+<script type="text/javascript">
+    function show_compare() {
+        if (document.getElementById("results1").value == document.getElementById("results2").value) {
+            document.getElementById("results2").value = "v100"
+        }
+        document.getElementById("img").src = 
+            "{{ site.baseurl }}/images/" + 
+            document.getElementById("results1").value +
+            "_over_" +
+            document.getElementById("results2").value+
+            "_on_" +
+            document.getElementById("model").value +
+            ".png"
+    }
+</script>
