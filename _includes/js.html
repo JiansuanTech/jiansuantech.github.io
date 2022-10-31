@@ -1,15 +1,20 @@
 <script type="text/javascript">
-    function show_compare() {
-        if (document.getElementById("results1").value == document.getElementById("results2").value) {
-            document.getElementById("results2").value = "v100"
+    function results1_change() {
+        if (document.getElementById("results1").value == "4090") {
+            document.getElementById("results2").innerHTML = 
+            '<option value="a10g">a10g</option><option value="a10">a10</option><option value="v100">v100</option>'
+        } else if(document.getElementById("results1").value == "a10g") {
+            document.getElementById("results2").innerHTML = 
+            '<option value="a10">a10</option><option value="v100">v100</option>'
+        } else if (document.getElementById("results1").value == "a10") {
+            document.getElementById("results2").innerHTML = 
+            '<option value="v100">v100</option>'
         }
-        document.getElementById("img").src = 
-            "{{ site.baseurl }}/images/" + 
-            document.getElementById("results1").value +
-            "_over_" +
-            document.getElementById("results2").value+
-            "_on_" +
-            document.getElementById("model").value +
-            ".png"
+    }
+    function show_compare() {        
+        document.getElementById("img").src = "{{ site.baseurl }}/images/" + 
+            document.getElementById("results1").value + "_over_" +
+            document.getElementById("results2").value+ "_on_" +
+            document.getElementById("model").value + ".png"
     }
 </script>
