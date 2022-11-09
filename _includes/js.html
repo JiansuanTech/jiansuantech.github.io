@@ -1,20 +1,52 @@
 <script type="text/javascript">
-    function results1_change() {
-        if (document.getElementById("results1").value == "4090") {
-            document.getElementById("results2").innerHTML = 
-            '<option value="a10g">a10g</option><option value="a10">a10</option><option value="v100">v100</option>'
-        } else if(document.getElementById("results1").value == "a10g") {
-            document.getElementById("results2").innerHTML = 
-            '<option value="a10">a10</option><option value="v100">v100</option>'
-        } else if (document.getElementById("results1").value == "a10") {
-            document.getElementById("results2").innerHTML = 
-            '<option value="v100">v100</option>'
+    function name_change(level) {
+        var name = level + '_name'
+        var value = level + '_value'
+        if (document.getElementById(name).value == "GPU") {
+            document.getElementById(value).innerHTML = '<option value="4090">4090</option>\
+                <option value="a10g">a10g</option>\
+                <option value="a10">a10</option>'
+            if (level == "l0") {
+                document.getElementById("l1_name").innerHTML = '<option value="Model">Model</option>\
+                    <option value="Batch">Batch</option>'
+                name_change("l1")
+            }
+        } else if(document.getElementById(name).value == "Model") {
+            document.getElementById(value).innerHTML = '<option valuse = "alexnet" >alexnet</option>\
+                <option valuse = "googlenet">googlenet</option>\
+                <option valuse = "resnet18">resnet18</option>\
+                <option valuse = "resnet50">resnet50</option>\
+                <option valuse = "resnet101">resnet101</option>\
+                <option valuse = "resnet152">resnet152</option>\
+                <option valuse = "vgg16">vgg16</option>\
+                <option valuse = "vgg19">vgg19</option>'
+            if (level == "l0") {
+                document.getElementById("l1_name").innerHTML = '<option value="GPU">GPU</option>\
+                    <option value="Batch">Batch</option>'
+                name_change("l1")
+            }
+        } else if(document.getElementById(name).value == "Batch") {
+            document.getElementById(value).innerHTML = '<option valuse = "1" >1</option>\
+                <option valuse = "2">2</option>\
+                <option valuse = "4">4</option>\
+                <option valuse = "8">8</option>\
+                <option valuse = "16">16</option>\
+                <option valuse = "32">32</option>\
+                <option valuse = "64">64</option>\
+                <option valuse = "128">128</option>'
+            if (level == "l0") {
+                document.getElementById("l1_name").innerHTML = '<option value="GPU">GPU</option>\
+                    <option value="Model">Model</option>'
+                name_change("l1")
+            }
         }
     }
+
     function show_compare() {        
         document.getElementById("img").src = "{{ site.baseurl }}/images/" + 
-            document.getElementById("results1").value + "_over_" +
-            document.getElementById("results2").value+ "_on_" +
-            document.getElementById("model").value + ".png"
+            document.getElementById("l0_name").value + "_" +
+            document.getElementById("l0_value").value + "_on_" +
+            document.getElementById("l1_name").value + "_" +
+            document.getElementById("l1_value").value + "_over_v100.png"
     }
 </script>
