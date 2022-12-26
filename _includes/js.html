@@ -4,6 +4,7 @@
         var value = level + '_value'
         if (document.getElementById(name).value == "GPU") {
             document.getElementById(value).innerHTML = '<option value="4090">4090</option>\
+                <option value="h100-pcie">h100-pcie</option>\
                 <option value="a10g">a10g</option>\
                 <option value="a10">a10</option>'
             if (level == "l0") {
